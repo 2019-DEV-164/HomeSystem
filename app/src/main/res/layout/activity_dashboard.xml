@@ -1,33 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
-    android:gravity="center_vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_02"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
     tools:context=".activity.DashboardActivity">
 
     <FrameLayout
         android:layout_width="136dp"
         android:layout_height="736dp"
-        android:layout_marginEnd="48dp"
         android:layout_marginStart="30dp"
+        android:layout_marginEnd="48dp"
         android:background="@drawable/menu_layout_bg">
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/listMenu"
             android:layout_gravity="center_vertical"
-            tools:listitem="@layout/menu_list_item"/>
+            tools:listitem="@layout/menu_list_item" />
 
     </FrameLayout>
 
-    <FrameLayout
+    <LinearLayout
+        android:id="@+id/dashboardMainContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/dashboardMainContainer"/>
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/view_header_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_container_header"/>
+
+            <FrameLayout
+                android:id="@+id/dashboardItemContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
