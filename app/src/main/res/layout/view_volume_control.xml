@@ -51,7 +51,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@drawable/mute"
-                android:onClick="@{viewModel.mutePressed}"/>
+                android:onClick="@{viewModel.onMuteBtnPressed}"/>
 
         </LinearLayout>
 
@@ -66,13 +66,13 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/vol_up"
                 android:layout_marginBottom="32dp"
-                android:onClick="@{viewModel.volUpPressed}"/>
+                android:onClick="@{viewModel.onVolUpBtnPressed}"/>
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/vol_down"
-                android:onClick="@{viewModel.volDownPressed}"/>
+                android:onClick="@{viewModel.onVolDownBtnPressed}"/>
         </LinearLayout>
 
     </LinearLayout>
