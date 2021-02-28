@@ -5,15 +5,15 @@ import android.view.View
 import java.security.AccessControlContext
 
 class VolumeControlViewModel(var context: Activity) {
-    fun volUpPressed(view: View){
+    fun onVolUpBtnPressed(view: View){
 
     }
 
-    fun volDownPressed(view: View){
+    fun onVolDownBtnPressed(view: View){
 
     }
 
-    fun mutePressed(view: View){
+    fun onMuteBtnPressed(view: View){
 
     }
 }
