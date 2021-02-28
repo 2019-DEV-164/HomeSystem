@@ -1,4 +1,4 @@
-package com.home.homesystem.activity
+package com.home.homesystem.fragment
 
 import android.app.Activity
 import android.os.Bundle
