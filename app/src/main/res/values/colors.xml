@@ -3,4 +3,17 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <!--Solid color-->
+    <color name="colorSolidWhite">#FFFFFF</color>
+    <color name="colorSolidGrey">#A8A9B6</color>
+    <color name="colorSolidBlue">#2D2343</color>
+    <color name="colorSolidLightBlue">#39426D</color>
+    <!--Gradient Color-->
+    <color name="colorGradientRedStart">#D84A30</color>
+    <color name="colorGradientRedEnd">#FF7777</color>
+    <color name="colorGradientBlueStart">#2491CB</color>
+    <color name="colorGradientBlueEnd">#0DB2D6</color>
+    <color name="colorGradientDarkBlueStart">#272A4B</color>
+    <color name="colorGradientDarkBlueEnd">#43314C</color>
+
 </resources>
