@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.home.homesystem.viewModel.NavigationControlViewModel" />
+    </data>
+<LinearLayout
     android:layout_width="280dp"
     android:layout_height="280dp"
     android:orientation="vertical"
@@ -34,6 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:onClick="@{viewModel.onUpBtnPressed}"
             android:src="@drawable/select_up" />
 
         <LinearLayout
@@ -45,16 +53,19 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="@{viewModel.onPrevBtnPressed}"
                 android:src="@drawable/select_left" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="@{viewModel.onOkBtnPressed}"
                 android:src="@drawable/select_down" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="@{viewModel.onNextBtnPressed}"
                 android:src="@drawable/select_right" />
         </LinearLayout>
 
@@ -62,7 +73,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:onClick="@{viewModel.onDownBtnPressed}"
             android:src="@drawable/select_down" />
     </LinearLayout>
 
 </LinearLayout>
+
+</layout>
