@@ -25,14 +25,12 @@ class DashboardActivity : AppCompatActivity() {
         listMenu?.adapter = MenuListAdapter()
 
         replaceFragment(
-            containerChannelList.id,
-            supportFragmentManager,
-            ChannelListFragment(),
-            false
+            containerChannelList.id, supportFragmentManager,
+            ChannelListFragment(), false
         )
         replaceFragment(
             containerMediaController.id, supportFragmentManager,
-            MediaControllerFragment(), false
+            MediaControllerFragment(this), false
         )
         replaceFragment(
             otherControllers.id, supportFragmentManager,
