@@ -8,6 +8,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Local TV"
         tools:text="Local TV" />
 
     <ImageView
@@ -25,6 +27,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="end"
+            android:textSize="16sp"
+            android:text="Power"
             tools:text="Power" />
 
         <ImageView

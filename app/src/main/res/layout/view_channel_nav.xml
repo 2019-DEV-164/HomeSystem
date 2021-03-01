@@ -29,7 +29,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="14sp"
-            tools:text="Sound" />
+            android:text="Channel"
+            tools:text="Channel" />
     </LinearLayout>
 
     <ImageView
