@@ -24,25 +24,84 @@
 
     </FrameLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/dashboardMainContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:paddingEnd="20dp"
         android:orientation="vertical">
 
         <include
             android:id="@+id/view_header_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            layout="@layout/view_container_header"/>
+            android:layout_alignParentTop="true"
+            layout="@layout/view_container_header" />
+
+        <RelativeLayout
+            android:id="@+id/dashboardItemContainer"
+            android:layout_below="@id/view_header_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <FrameLayout
-                android:id="@+id/dashboardItemContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:id="@+id/containerChannelList" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@id/containerOtherMediaController"
+                android:id="@+id/containerMediaController" />
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:id="@+id/containerOtherMediaController">
 
-            </FrameLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/otherControllers"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toStartOf="@id/soundController"
+                    android:orientation="vertical" />
 
-    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/soundController"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toStartOf="@id/navigationController"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/navigationController"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toStartOf="@id/channelController"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/channelController"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="vertical" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
 
 </LinearLayout>

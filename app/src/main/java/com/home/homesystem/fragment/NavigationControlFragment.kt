@@ -11,7 +11,7 @@ import com.home.homesystem.R
 import com.home.homesystem.databinding.ViewNavControlBinding
 import com.home.homesystem.viewModel.VolumeControlViewModel
 
-class NavigationControlFragment(var mActivity: Activity) : Fragment()  {
+class NavigationControlFragment(var mActivity: Activity) : Fragment() {
     lateinit var mBinding: ViewNavControlBinding
     private lateinit var viewModel: VolumeControlViewModel
     override fun onCreateView(

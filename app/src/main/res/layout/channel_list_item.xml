@@ -2,14 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/menu_layout_bg">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imgMenu"
         android:padding="20dp"
-        tools:src="@drawable/digital_tv_channel_logo_31"/>
+        android:layout_margin="5dp"
+        android:src="@drawable/digital_tv_channel_logo_31"
+        tools:src="@drawable/digital_tv_channel_logo_31" />
 
 </LinearLayout>
