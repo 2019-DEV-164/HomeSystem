@@ -25,7 +25,7 @@ class ChannelListAdapter : RecyclerView.Adapter<ChannelListAdapter.ViewHolder>()
 
     }
 
-    class ViewHolder(view: View): RecyclerView.ViewHolder(view){
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     }
 }

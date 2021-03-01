@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            layout="@layout/view_container_header"/>
+            layout="@layout/view_container_header" />
 
         <RelativeLayout
             android:id="@+id/dashboardItemContainer"
@@ -51,14 +51,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:id="@+id/containerChannelList"/>
+                android:id="@+id/containerChannelList" />
 
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_above="@id/containerOtherMediaController"
-                android:id="@+id/containerMediaController"/>
+                android:id="@+id/containerMediaController" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -66,33 +66,37 @@
                 android:layout_alignParentBottom="true"
                 android:orientation="horizontal"
                 android:id="@+id/containerOtherMediaController">
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/otherControllers"
                     android:layout_marginEnd="20dp"
                     android:layout_toStartOf="@id/soundController"
-                    android:orientation="vertical"/>
+                    android:orientation="vertical" />
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/soundController"
                     android:layout_marginEnd="20dp"
                     android:layout_toStartOf="@id/navigationController"
-                    android:orientation="vertical"/>
+                    android:orientation="vertical" />
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/navigationController"
                     android:layout_marginEnd="20dp"
                     android:layout_toStartOf="@id/channelController"
-                    android:orientation="vertical"/>
+                    android:orientation="vertical" />
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/channelController"
                     android:layout_alignParentEnd="true"
-                    android:orientation="vertical"/>
+                    android:orientation="vertical" />
             </RelativeLayout>
 
 

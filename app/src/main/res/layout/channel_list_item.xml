@@ -11,6 +11,6 @@
         android:padding="20dp"
         android:layout_margin="5dp"
         android:src="@drawable/digital_tv_channel_logo_31"
-        tools:src="@drawable/digital_tv_channel_logo_31"/>
+        tools:src="@drawable/digital_tv_channel_logo_31" />
 
 </LinearLayout>

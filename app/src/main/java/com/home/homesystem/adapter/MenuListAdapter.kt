@@ -11,9 +11,11 @@ import kotlinx.android.synthetic.main.menu_list_item.view.*
 
 class MenuListAdapter : RecyclerView.Adapter<MenuListAdapter.ViewHolder>() {
 
-    private val menuList:MutableList<Int> = mutableListOf(R.drawable.power_in_menu,
-        R.drawable.digital_tv,R.drawable.evpad,R.drawable.unblock,R.drawable.now_tv,
-        R.drawable.apple_tv,R.drawable.dvd,R.drawable.pc)
+    private val menuList: MutableList<Int> = mutableListOf(
+        R.drawable.power_in_menu,
+        R.drawable.digital_tv, R.drawable.evpad, R.drawable.unblock, R.drawable.now_tv,
+        R.drawable.apple_tv, R.drawable.dvd, R.drawable.pc
+    )
 
     private var selectedItem = 0
 
@@ -34,14 +36,14 @@ class MenuListAdapter : RecyclerView.Adapter<MenuListAdapter.ViewHolder>() {
             notifyItemChanged(previousItem)
             notifyItemChanged(position)
         }
-        holder.bind(position,selectedItem,menuList[position])
+        holder.bind(position, selectedItem, menuList[position])
     }
 
-    class ViewHolder(view:View): RecyclerView.ViewHolder(view){
-        fun bind(position: Int,selectedItem:Int,@DrawableRes drawable:Int){
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        fun bind(position: Int, selectedItem: Int, @DrawableRes drawable: Int) {
             itemView.imgMenu.setImageResource(drawable)
             itemView.imgMenuSelect.visibility = View.GONE
-            if(selectedItem == position){
+            if (selectedItem == position) {
                 itemView.imgMenuSelect.visibility = View.VISIBLE
             }
         }
